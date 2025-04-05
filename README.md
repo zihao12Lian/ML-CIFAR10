@@ -1,5 +1,12 @@
 # ML-CIFAR10
 
+## Training Curves
+
+The following figure shows the training loss, accuracy, and learning rate over 20 epochs.
+
+![Training Curves](assets/training_curves.png)
+
+
 This project implements image classification on the CIFAR-10 dataset using a modified ResNet18 architecture in PyTorch. Key features include:
 
 - Mish activation function (replacing ReLU)
@@ -14,7 +21,7 @@ This project implements image classification on the CIFAR-10 dataset using a mod
 ML/
 ├── dataset/              # (optional) for custom datasets
 ├── models/               # stores best_model.pth
-├── main.py               # training script
+├── train.py              # training script
 ├── training_curves.png   # training loss and accuracy curves
 ├── requirements.txt      # package dependencies
 └── README.md             # this file
@@ -38,7 +45,7 @@ pip install -r requirements.txt
 3. Run the training script:
 
 ```bash
-python main.py
+python train.py
 ```
 
 The best model will be saved in the `models/` directory, and the training curves will be plotted in `training_curves.png`.
